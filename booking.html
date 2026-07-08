@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <section class="booking">
+    <h1>Book Your Appointment</h1>
+    <p>Please fill out the form below to book your appointment.</p>
+    <hr>
+    <label for="parlour">Select Parlour:</label>
+    <select id="parlour" name="parlour">
+        <option value="Reggie's">Reggie's</option>
+        <option value="pink parlour">Pink Parlour</option>
+        <option value="A & l barber">A & L Barber shop</option>
+        <option value="luz spa">Luz Spa</option>
+        <option value="braid wrld">Braid World</option>
+        <option value="glitter waxing">Glitter Waxing</option>
+    </select>
+    <br><br>
+    <label for="date">Select Date:</label>
+    <input type="date" id="date" name="date" required>
+    <br><br>
+    <label for="time">Select Time:</label>
+    <input type="time" id="time" name="time" required>
+    <br><br>
+    <form action="/book" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" required>
+        <br>
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" name="phone" required>
+        <br>
+        <label for="special instructions">Special Instructions:</label>
+        <textarea id="special instructions" name="special instructions"></textarea>
+        <br>
+        <a href="confirmation.html">
+            <button>confirm booking</button>
+        </a>
+    </form>
+    </section>
+</body>
+</html>

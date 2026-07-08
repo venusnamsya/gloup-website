@@ -1,0 +1,574 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    background-color: #f8f5ef;
+    color: #090909;
+}
+a {
+    text-decoration: none;
+    color: inherit;
+}
+header {
+    background-color: #173fa;
+    padding: 20px 60px;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+}
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.5rem 4rem;
+    background-color: #173fa;
+    list-style: none;
+}
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 1rem;
+    padding: 0;
+    margin: 0;
+}
+.nav-links a {
+    display: inline-block;
+    text-decoration: none;
+    background-color: #b7c8c2;
+    color: #ebe9e9;
+    padding: 0.6rem 1.2rem;
+    border-radius: 4px;
+    border:none;
+    font-size: 0.9rem;
+    transition: background-color 0.3s, transform0.1s ease;
+    list-style: none;
+    font-family: Inria Serif;
+}
+nav a:hover {
+    background-color: #2d6a63;
+    transform: translateY(-1px);
+}
+.nav-actions {
+    display: flex;
+    gap: 1.5rem;
+    align-items: center;
+} 
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.5rem 1rem;
+    border-radius: 4px;
+    background-color: #2d6a63;
+}
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7c8c2;
+    padding: 15px 40px;
+    border-bottom: 1px solid #0f4c45;
+
+}
+.logo {
+    font-size: 28px;
+    font-weight: bold;
+    color: #0f4c45;
+    font-family: 'playfair display', italianno;
+}
+.hero-grid {
+   display: grid;
+   grid-template-columns: 1.2fr 1fr;
+   grid-template-rows: auto auto;
+   gap: 30px;
+   padding: 40px 5%;
+   background-color: #f8f5ef;
+   max-width: 1400px;
+   margin: 0 auto;
+   align-items: start;
+}
+.hero-image-large {
+    grid-column: 1;
+    grid-row: 1;
+    position: relative;
+    width: 100%;
+}
+.hero-large-image img {
+    width: 100%;
+    height: 450px;
+    display: block;
+    object-fit: cover;
+}
+.image-overlay-text {
+    position: absolute;
+    top: 35%;
+    text-align: center;
+    colour: #0f4c45;
+}
+.image-overlay-text h2 {
+    font-size: 2.2rem;
+    font-family: 'playfair display', italianno;
+    font-weight: bold;
+    margin:0 0 10px 0;
+    color: #0f4c45;
+    bottom: 35%;
+    text-align: center;
+}
+.image-overlay-text p {
+    font-size: 1.2rem;
+    font-family: 'Inria Serif', serif;
+    margin: 0;
+    font-weight: 400;
+    color: #f0eeee;
+}
+.hero-text-block {
+    grid-column: 2;
+    grid-row: 1/span 2;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.hero-text-block h1 {
+    color: #0f4c45;
+    font-family: 'serif', georgia, serif;
+    font-weight: 300;
+    line-height: 1.2;
+    margin:0;
+    letter-spacing: 2px;
+    font-size: 2.6rem;
+}
+.hero-text-block p {
+    font-size: 0.95rem;
+    color: #555555;
+    line-height: 1.6;
+    margin:0;
+    max-width: 85%;
+    font-family: 'Inria Serif', serif;
+}
+.hero-small-image {
+    width: 100%;
+    margin-top: 10px;
+}
+.hero-small-image img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+    display: block;
+}
+.hero-buttons-block {
+    grid-column: 1;
+    grid-row: 2;
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    margin-top: 10px;
+}
+.cta-button {
+    display: inline-block;
+    padding: 12px 24px;
+    background-color: #0f4c45;
+    border-radius: 4px;
+    font-size: 1rem;
+    color: #ffffff;
+    transition: background-color 0.3s, transform 0.1s ease;
+    text-family: 'Inria Serif', serif;
+    font-weight: bold;
+    transition: background-color 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    min-width: 120px;
+    transition:background-color 0.2s ease;
+}
+.cta-button:hover {
+    background-color: #2d6a63;
+    transform: translateY(-2px);
+}
+.section-divider {
+    border: none;
+    height: 8px;
+    background-color: #a1b2ac;
+    margin: 60px auto;
+    border-radius: 2px;
+    max-width: 80%;
+}
+
+.about-grid {
+  display: grid;
+  grid-template-columns: 1fr 1.2fr; /
+  grid-template-rows: auto auto;    
+  gap: 40px 60px;                   
+  padding: 80px 10%;        
+  align-items: start;
+  background-image: url("assets/pexels-artbovich-7750130.jpg");
+}
+.about-brand-quad {
+  grid-column: 1;
+  grid-row: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+}
+
+.circle-logo-placeholder {
+  width: 120px;
+  height: 120px;
+  border: 1px dashed #999;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-family: 'Georgia', serif;
+  font-size: 0.75rem;
+  letter-spacing: 1px;
+  color: #b7c8c2;
+}
+
+.tagline-text {
+  font-family: 'Georgia', serif;
+  font-style: italic;
+  font-size: 1.4rem;
+  line-height: 1.4;
+  color: #333333;
+  text-align: right;
+  margin: 0;
+  padding-top: 40px;
+}
+
+.about-large-img-quad {
+  grid-column: 2;
+  grid-row: 1;
+}
+
+.about-large-img-quad img {
+  width: 100%;
+  height: 380px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-profile-quad {
+  grid-column: 1;
+  grid-row: 2;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.cursive-heading {
+  font-family: 'Playfair Display', 'Georgia', serif;
+  font-style: italic;
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: #b7c8c2
+  margin: 0;
+}
+
+.about-small-img-wrap {
+  width: 85%;
+}
+
+.about-small-img-wrap img {
+  width: 100%;
+  height: 240px;
+  object-fit: cover;
+  display: block;
+}
+
+.about-desc-quad {
+  grid-column: 2;
+  grid-row: 2;
+  padding-top: 20px;
+  color: #0f4c45;
+}
+
+.about-desc-quad p {
+  font-family: 'Arial', sans-serif;
+  font-size: 1rem;
+  color: #555555;
+  line-height: 1.8;
+  letter-spacing: 0.5px;
+  text-align: justify;
+  margin: 0;
+}
+.services-container {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 5%;
+  background-color: #f6f6f4;
+  background-image: url("assets/pexels-artbovich-7750130.jpg");
+}
+.service-container h1 {
+  font-weight: bold;
+  font-family: 'Times New Roman', Times, serif;
+  text-align: center;
+  color: #0f4c45;
+}
+.header-img-wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #b7c8c2;
+    padding: 15px 40px;
+    border-bottom: 2px #0f4c45;
+
+}
+.services-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  margin-bottom: 50px;
+}
+
+.header-left {
+  flex: 1.2;
+}
+
+.header-left h2 {
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  letter-spacing: 2px;
+  color: #b7c8c2;
+  margin-bottom: 15px;
+}
+
+.header-img-wrapper img {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 4px;
+}
+
+.header-right {
+  flex: 1.5;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.star-icon {
+  font-size: 2rem;
+  color: #b5c4ba; 
+}
+
+.header-right p {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.8rem;
+  line-height: 1.4;
+  color: #3b4640;
+  max-width: 90%;
+}
+
+.service-cards-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr; 
+  gap: 30px;
+}
+
+
+.service-card {
+  display: flex;
+  background-color: #a8b9ad; 
+  border-radius: 8px;
+  overflow: hidden;
+  height: 180px; 
+}
+
+.card-image {
+  flex: 1;
+  max-width: 40%;
+}
+
+.card-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  display: block;
+}
+
+.card-info {
+  flex: 1.5;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  align-items: flex-end;        
+}
+
+.card-info p {
+  font-family: Arial, sans-serif;
+  font-size: 0.95rem;
+  color: #ffffff; 
+  line-height: 1.4;
+  align-self: flex-start; 
+  margin: 0;
+}
+
+
+.card-access-btn {
+  display: inline-block;
+  background-color: #3b5246; 
+  color: #3b5246;
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  font-weight: bold;
+  padding: 10px 24px;
+  border-radius: 6px;
+  text-align: center;
+  transition: background-color 0.2s ease;
+}
+
+.card-access-btn:hover {
+  background-color: #27382f;
+}
+
+.parlours {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 60px 5%;
+  background-color: #fcfdfa;
+  background-image: url("assets/pexels-artbovich-7750130.jpg");
+  background-size: cover;
+}
+.parlours h1 {
+  text-align: center;
+  color: #0f4c45;
+  font-weight: bold;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.parlour-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); 
+  gap: 30px;                             
+}
+
+.parlour-card {
+  background-color: #b7c8c2;
+  border-radius: 8px;
+  padding: 20px;
+  border: 1px solid #e2e8f0;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.02);
+  display: flex;
+  flex-direction: column;
+}
+
+.parlour-card img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 6px;
+  margin-bottom: 15px;
+}
+
+.parlour-name {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #888888;
+  margin: 0 0 5px 0;
+}
+
+.parlour-card h3 {
+  font-family: 'Playfair Display', Georgia, serif;
+  font-size: 1.2rem;
+  color: #3b4640;
+  margin: 0 0 10px 0;
+}
+
+
+.rating {
+  color: #d4af37; 
+  font-size: 1.1rem;
+  margin: 0 0 10px 0;
+}
+
+.parlour-location {
+  font-family: Arial, sans-serif;
+  font-size: 0.85rem;
+  color: #666666;
+  margin: 0 0 20px 0;
+}
+
+
+.view-btn {
+  margin-top: auto; 
+  display: block;
+  text-align: center;
+  background-color: #0f4c45; 
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.view-btn:hover {
+  background-color: #6ec9a0;
+}
+.booking-btn {
+  margin-top: auto; 
+  display: block;
+  text-align: center;
+  background-color: #0f4c45; 
+  color: #ffffff !important;
+  text-decoration: none;
+  font-family: Arial, sans-serif;
+  font-size: 0.9rem;
+  font-weight: bold;
+  padding: 12px;
+  border-radius: 6px;
+  transition: background-color 0.2s ease;
+}
+
+.booking {
+    background-image: url("assets/pexels-artbovich-7750130.jpg");
+    margin: 0;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.register {
+    background-image: url("assets/pexels-artbovich-7750130.jpg");
+    margin: 0;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.login {
+   background-image: url("assets/pexels-artbovich-7750124 - Copy.jpg");
+    margin: 0;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}
+.contact {
+    background-image: url("assets/pexels-artbovich-7750130.jpg");
+    margin: 0;
+    padding: 40px;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+
+}     
+
