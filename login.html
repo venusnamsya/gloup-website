@@ -6,8 +6,19 @@
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
 </head>
-<body>
+<body> 
+    <nav>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="parlours.html">Parlours</a></li>
+                <li><a href="register.html">Register</a></li>   
+            </ul>
+        </nav>
     <section class="login">
+        <div class="login-card">
     <form action="/login" method="POST">
         <label for="username">Username:</label>
         <input type="text" id="username" name="username" required>
@@ -15,12 +26,16 @@
         <label for="password">Password:</label>
         <input type="password" id="password" name="password" required>
         <br>
+        <a href="index.html">
         <button type="submit">Login</button>
-        <p>Don't have an account? <a href="register.html">Register here</a></p>
-        <p>Forgot your password? <a href="reset-password.html">Reset it here
+        </a>
+        <p>Don't have an account? <a href="navigation/register.html">Register here</a></p>
+        <p>Forgot your password? <a href="reset-password.html">Reset it here</a></p>
+    </div>
         
     </form>
 </section>
+<footer>@All rights reserved</footer>
 
 </body>
 </html>
