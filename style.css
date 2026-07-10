@@ -544,6 +544,17 @@ header {
     min-height: 100vh;
 
 }
+.booking-btn {
+  width: 100%;
+  background-color: #0f4c45;
+  color: white;
+  border: none;
+  padding: 12px;
+  border-radius: 8px;
+  font-size: 18px;
+  cursor: pointer;
+  margin-top: 20px;
+}
 .book-card {
   width: 450px;
   padding: 30px;
